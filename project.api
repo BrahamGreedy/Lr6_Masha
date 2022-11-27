@@ -1,3 +1,28 @@
-# controls.h controls.hpp task.hpp
-!main.cpp cctype cerrno clocale controls.hpp cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.hpp type_traits typeinfo wchar.h wctype.h #<#>
+# controls.h task.hpp
+!controls.cpp controls.h #<#>
+!main.cpp cctype cerrno clocale cstdint cstdio cstdlib ctype.h cwchar cwctype errno.h exception graphics.h initializer_list ios iosfwd iostream istream keys_n_colors.h limits limits.h locale.h new ostream signal.h stddef.h stdexcept stdint.h stdio.h stdlib.h streambuf string string_view system_error task.hpp type_traits typeinfo wchar.h wctype.h #<#>
+ : void create_controls #<controls.cpp>
+ struct@button _type_ #<controls.h>
+CONTROLS : button enum #<controls.h>
+Figure _type_ #<task.hpp>
+Figure(int n) #<task.hpp>
+HEIGHT #<controls.h>
+WIDTH #<controls.h>
 main() -> int #<main.cpp>
+point _type_ #<task.hpp>
+	Figure:%n_ver : int #<task.hpp>
+	Figure:%points : point* #<task.hpp>
+	Figure:%center : point #<task.hpp>
+	Figure::up() -> void #<task.hpp>
+	Figure::down() -> void #<task.hpp>
+	Figure::left() -> void #<task.hpp>
+	Figure::right() -> void #<task.hpp>
+	Figure::l_rotate() -> void #<task.hpp>
+	Figure::r_rotate() -> void #<task.hpp>
+	Figure::more() -> void #<task.hpp>
+	Figure::less() -> void #<task.hpp>
+	Figure::draw() -> void #<task.hpp>
+	button::x : int #<controls.h>
+	button::y : int #<controls.h>
+	point::x : int #<task.hpp>
+	point::y : int #<task.hpp>
